@@ -1,5 +1,5 @@
-# CS-1180-SEM
-Class materials for CS-1180 in [SEMESTER]
+# CS-1180-FA26
+Class materials for CS-1180 in FA26
 
 
 ## Table of Contents
