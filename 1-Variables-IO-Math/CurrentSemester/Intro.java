@@ -52,6 +52,7 @@ public class Intro
         // String is an object in Java that can hold multi-character literals
         // objects are variables where the data type is a Java CLASS
         String multipleCharacters = "abcdefg";
+        //String blah = new String("bhvsdbj");
 
         System.out.println("hi class!!");
 
