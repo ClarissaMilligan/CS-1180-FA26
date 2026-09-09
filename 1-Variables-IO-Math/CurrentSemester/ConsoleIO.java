@@ -33,5 +33,13 @@ public class ConsoleIO
 
         char firstLetter = firstName.charAt(0);
         System.out.println("The first letter of your name is: " + firstLetter);
+
+        boolean hasAnA = firstName.contains("a");
+        int index = firstName.indexOf("a");
+        System.out.println("The first name contains the letter 'a': " + hasAnA);
+        System.out.println("'a' was found at index " + index);
+        System.out.println("the first name is " + firstName.length() + " characters long");
+        System.out.println("the last three characters of the name are: " + firstName.substring(firstName.length() - 3));
+
     }
 }

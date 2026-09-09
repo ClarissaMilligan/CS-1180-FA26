@@ -94,13 +94,17 @@ public class Intro
         // Math class has many other useful math constants and functions
         // Math class exists in the lang package so it does not need imported
         double arbitraryArea = Math.PI * Math.pow(averageAge, 2);
-        System.out.println(arbitraryArea);
+        System.out.println(arbitraryArea + " is the arbitrary area");
+
+        System.out.printf("%.4f is the arbitrary area\n", arbitraryArea);
 
         // modulus operator: finds the remainder of a division operation
         int remainder = 25 % 5;         // 25 is divisible by 5 so the remainder is 0
         System.out.println(remainder);
         remainder = 25 % 2;             // 25 is NOT divisible by 2 and the remainder is 1 (meaning it is odd)
         System.out.println(remainder);
+
+
 
     }
 }
