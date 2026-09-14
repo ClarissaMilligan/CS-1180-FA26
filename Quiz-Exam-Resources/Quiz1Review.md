@@ -1,5 +1,5 @@
 # Quiz One Prep
-The first quiz will be held on [DATE]. The quiz is 30  minutes. The quiz will be a paper quiz, so a writing utensil is required. The exam is individual and talking will not be tolerated. On the day of your quiz, please wait outside the classroom as I will be seating you for the quiz. The first 25 minutes of class will be for review, so please have questions prepared. The quiz will cover the following topics:
+The first quiz will be held on Wednesday, September 16. The quiz is 30  minutes. The quiz will be a paper quiz, so a writing utensil is required. The exam is individual and talking will not be tolerated. On the day of your quiz, please wait outside the classroom as I will be seating you for the quiz. The first 25 minutes of class will be for review, so please have questions prepared. The quiz will cover the following topics:
 
 ## Identification
 
