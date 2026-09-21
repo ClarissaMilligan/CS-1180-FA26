@@ -28,6 +28,20 @@ public class OverflowIntDivision
 
         Scanner scnr = new Scanner(System.in);
 
+        System.out.println("Enter a direction (N, S, E, W):");
+        String input = scnr.next();
+        scnr.nextLine();    // clear the buffer; throws away the left behind new line character
+
+        switch (input)
+        {
+            case "N":
+                System.out.println("You went north!");
+                break;
+            default:
+                System.out.println("invalid input!!!");
+                break;
+        }
+
         System.out.println("type in either + or -");
         String operator = scnr.nextLine();
         operator = operator.substring(0, 1);
