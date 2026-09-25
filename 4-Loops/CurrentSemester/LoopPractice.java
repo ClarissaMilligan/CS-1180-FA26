@@ -2,6 +2,12 @@ import java.util.Scanner;
 
 public class LoopPractice {
     public static void main(String[] args) {
+
+        for (double i = 0.0f; i < 1.0f; i = i + 0.1f)
+        {
+            System.out.printf("%.2f",i);
+        }
+
         Scanner scnr = new Scanner(System.in);
 
 //        System.out.println("How old are you?");
