@@ -14,28 +14,34 @@ public class NestedLoopPractice
         while (keepLooping)
         {
             System.out.println("Choose either addition, subtraction, multiplication, or division: (+ - * /)");
-            String operator = scnr.next();
-            if (operator.equals("+") || operator.equalsIgnoreCase("plus") || operator.equalsIgnoreCase("addition"))
+            String input = scnr.next();
+            if (input.equals("+") || input.equalsIgnoreCase("plus") || input.equalsIgnoreCase("addition"))
             {
                 op = Operator.PLUS;
             }
-            else if (operator.equals("-") || operator.equalsIgnoreCase("minus") || operator.equalsIgnoreCase("subtraction"))
+            else if (input.equals("-") || input.equalsIgnoreCase("minus") || input.equalsIgnoreCase("subtraction"))
             {
                 op = Operator.MINUS;
             }
-            else if (operator.equals("*") || operator.equalsIgnoreCase("multiply") || operator.equalsIgnoreCase("multiplication"))
+            else if (input.equals("*") || input.equalsIgnoreCase("multiply") || input.equalsIgnoreCase("multiplication"))
             {
                 op = Operator.MULTIPLY;
             }
-            else if (operator.equals("/") || operator.equalsIgnoreCase("divide") || operator.equalsIgnoreCase("division"))
+            else if (input.equals("/") || input.equalsIgnoreCase("divide") || input.equalsIgnoreCase("division"))
             {
                 op = Operator.DIVIDE;
+            }
+            else if (input.equalsIgnoreCase("done"))
+            {
+                keepLooping = false;
+                op = Operator.INVALID;
             }
             else
             {
                 System.out.println("Bad input! Please type either '+', '-', '*', or '/'!");
                 op = Operator.INVALID;
             }
+            scnr.nextLine();
 
             if (op != Operator.INVALID)
             {
@@ -52,8 +58,8 @@ public class NestedLoopPractice
                     else
                     {
                         System.out.println("You must type in an integer!");
-                        scnr.nextLine();
                     }
+                    scnr.nextLine();
                 }
 
                 for (int i = 0; i < numTimes; i++)
@@ -75,12 +81,25 @@ public class NestedLoopPractice
                         }
                     }
 
-                    // runningValue += -= *= /= newValue
-
+                    switch (op)
+                    {
+                        case PLUS:
+                            runningValue += newValue;
+                            // runningValue = runningValue + newValue;
+                            break;
+                        case MINUS:
+                            runningValue -= newValue;
+                            break;
+                        case MULTIPLY:
+                            runningValue *= newValue;
+                            break;
+                        case DIVIDE:
+                            runningValue /= newValue;
+                            break;
+                    }
                 }
-
             }
-
+            System.out.println("Your total so far is: " + runningValue);
         }
     }
 }
