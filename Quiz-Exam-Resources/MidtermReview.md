@@ -1,5 +1,5 @@
 # Midterm Review
-The midterm will be held on [DATE] at the regular class time. Please make sure to arrive early, so you don't miss any exam time. You will receive 55 minutes to complete the exam. The exam will be a paper exam, so a writing utensil is required. The exam is individual and talking will not be tolerated. On the day of your exam, please wait outside the classroom as I will be seating you for the midterm.
+The midterm will be held on October 9th at the regular class time. Please make sure to arrive early, so you don't miss any exam time. You will receive 55 minutes to complete the exam. The exam will be a paper exam, so a writing utensil is required. The exam is individual and talking will not be tolerated. On the day of your exam, please wait outside the classroom as I will be seating you for the midterm.
 
 ## Intro Material
 These topics will be covered *implicitly*, meaning there won't be questions that directly focus on these concepts, but you will need to understand these concepts in order to understand other questions
