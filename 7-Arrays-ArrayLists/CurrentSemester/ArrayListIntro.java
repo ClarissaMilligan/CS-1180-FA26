@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ArrayListIntro
 {
@@ -13,6 +14,7 @@ public class ArrayListIntro
         System.out.println(honorsStudents);
 
         honorsStudents.add(2, "Kate");
+        System.out.println(honorsStudents);
         honorsStudents.add(0, "Xavier");
 
         System.out.println(honorsStudents);
@@ -21,7 +23,7 @@ public class ArrayListIntro
 
         System.out.println(honorsStudents);
 
-        honorsStudents.remove(4);
+        System.out.println(honorsStudents.remove(4));
 
         System.out.println(honorsStudents);
 
@@ -38,5 +40,8 @@ public class ArrayListIntro
 
         System.out.println(honorsStudents);
         System.out.println(honorsStudents.isEmpty());
+
+        ArrayList<Integer> nums = new ArrayList<>(Arrays.asList(3, 4, 5, 6, 8));
+        System.out.println(nums);
     }
 }
