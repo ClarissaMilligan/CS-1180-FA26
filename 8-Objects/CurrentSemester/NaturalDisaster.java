@@ -8,13 +8,27 @@ public class NaturalDisaster
     private ArrayList<String> areasAffected = new ArrayList<>();
 
     // table 1: write the constructor
-    public NaturalDisaster(double damageCost, int fatalities, double casualities, ArrayList<String> areasAffected)
+    public NaturalDisaster(double damageCost, int fatalities, int injured, ArrayList<String> areasAffected)
     {
+        setDamageCost(damageCost);
+        setFatalityCount(fatalities);
+        setCasualtyCount(injured);
+        setAreasAffected(areasAffected);
+    }
 
+    @Override
+    public String toString()
+    {
+        String out = String.format("Natural Disaster caused $%,.2f of damage. Fatality percent was %.2f%%", damageCost, getFatalityPercent());
+        out = out + "\nAreas affected include:\n-----------------------\n";
+        for (String area : areasAffected)
+        {
+            out += area + "\n";
+        }
+        return out;
     }
 
     // table 2: getter/setter for damageCost
-
     public double getDamageCost()
     {
         return damageCost;
@@ -63,7 +77,7 @@ public class NaturalDisaster
 
     public void setCasualtyCount(int injuredCount)
     {
-        if (injuredCount > 0)
+        if (injuredCount >= 0)
         {
             this.casualtyCount = injuredCount + fatalityCount;
         }
